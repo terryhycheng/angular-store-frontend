@@ -1,0 +1,20 @@
+@use "../../styles/" as *;
+
+.container {
+  display: flex;
+}
+
+#header-wrapper {
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  @include maxWidth();
+}
+
+#icon-wrapper {
+  gap: 2rem;
+
+  svg {
+    cursor: pointer;
+  }
+}

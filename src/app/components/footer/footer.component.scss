@@ -1,0 +1,56 @@
+@use "../../styles/" as *;
+
+.container {
+  display: flex;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+strong {
+  font-weight: 600;
+}
+
+#angular-box {
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#footer-container {
+  border-top: solid 1px white;
+  padding: 1rem;
+}
+
+#footer-wrapper {
+  justify-content: space-between;
+  align-items: center;
+  @include maxWidth();
+}
+
+#footer-left {
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#footer-right {
+  align-items: center;
+  gap: 2rem;
+}
+
+#personal-info {
+  flex-direction: column;
+  gap: 0.5rem;
+
+  strong {
+    font-size: 1.9rem;
+  }
+
+  a {
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+
+  #name-box {
+    display: flex;
+    align-items: center;
+  }
+}
