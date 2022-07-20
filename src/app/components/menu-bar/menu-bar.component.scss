@@ -1,0 +1,23 @@
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.3rem;
+  border-right: 1px solid white;
+}
+
+a {
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+
+  :hover {
+    color: orangered;
+  }
+}
+
+.active {
+  color: orange;
+}

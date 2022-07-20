@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hero-section.component.scss'],
 })
 export class HeroSectionComponent implements OnInit {
-  bannerImagePath: string = '../../../assets/images/hottoys_main_banner.jpeg';
+  bannerImagePath: string =
+    '../../../../assets/images/hottoys_main_banner.jpeg';
 
   constructor() {}
 

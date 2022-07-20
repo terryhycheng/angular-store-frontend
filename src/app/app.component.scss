@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
 
 * {
   line-height: 120%;
@@ -7,7 +8,7 @@
 
 body {
   min-height: 100vh;
-  background-color: rgba(25, 25, 25, 1);
+  background-color: rgb(15, 15, 15);
   color: white;
 }
 
@@ -15,7 +16,15 @@ main {
   min-height: 80vh;
 }
 
-header {
+.absolute {
   position: absolute;
+  background: none;
+}
+
+header {
+  position: relative;
+  background-image: url(../assets/images/black_bg.jpg);
+  background-position: top;
+  background-size: cover;
   width: 100%;
 }

@@ -1,0 +1,11 @@
+@use "../../styles/" as *;
+
+.container {
+  display: grid;
+  position: sticky;
+  grid-template-columns: 200px 1fr;
+  gap: 3rem;
+  padding-top: 5rem;
+  min-height: 50vh;
+  @include maxWidth();
+}

@@ -1,0 +1,26 @@
+@use "../../styles/" as *;
+
+.container {
+  padding-top: 5rem;
+  display: flex;
+  gap: 4rem;
+  flex-direction: column;
+  @include maxWidth();
+}
+
+h2 {
+  text-align: center;
+}
+
+a {
+  padding: 1rem 3rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: center;
+  margin: auto;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}

@@ -1,0 +1,9 @@
+<ul>
+  <a
+    *ngFor="let link of links"
+    [routerLink]="link.path"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    ><li>{{ link.text }}</li></a
+  >
+</ul>
