@@ -15,7 +15,8 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'product/:id', component: ProductDetailsComponent },
   { path: 'purchase', component: PurchaseDoneComponent },
-  { path: '**', component: ErrorComponent },
+  { path: 'error', component: ErrorComponent },
+  { path: '**', redirectTo: 'error' },
 ];
 
 @NgModule({

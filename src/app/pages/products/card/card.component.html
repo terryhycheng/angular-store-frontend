@@ -1,0 +1,13 @@
+<a routerLink="/product/{{ product.id }}">
+  <img [src]="product.images[0].url" alt="" />
+  <div class="container">
+    <div class="container-left">
+      <h3>{{ product.name }}</h3>
+      <p>{{ product.movie }}</p>
+    </div>
+    <div class="container-right">
+      <h4>{{ product.scale }}</h4>
+      <p>{{ product.release_date_short }}</p>
+    </div>
+  </div>
+</a>

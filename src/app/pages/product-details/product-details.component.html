@@ -1,1 +1,43 @@
-<p>product-details works!</p>
+<div *ngIf="!isLoading">
+  <div class="container" *ngIf="product">
+    <div id="button-wrapper">
+      <a routerLink="/"
+        ><mat-icon fontIcon="arrow_back"></mat-icon> Back to Products</a
+      >
+      <a routerLink="/cart">Go to Cart</a>
+    </div>
+    <div id="content-wrapper">
+      <div
+        [ngStyle]="{ 'background-image': 'url(' + product.images[1].url + ')' }"
+        id="image-box"
+      >
+        <img src="../../../assets/images/newly_launched.png" alt="" />
+      </div>
+      <div class="text-wrapper">
+        <div>
+          <h2>{{ product.name }}</h2>
+          <h3>{{ product.movie }}</h3>
+        </div>
+        <h3 id="model">{{ product.model }}</h3>
+        <div id="intro-wrapper">
+          <h3 class="sub-title">Character Introduction</h3>
+          <p *ngFor="let paragraph of product.intro" id="intro">
+            {{ paragraph }}
+          </p>
+          <h2>${{ product.price }}</h2>
+          <div id="qty-box">
+            <p>Quantity</p>
+            <select>
+              <option *ngFor="let num of [1, 2, 3, 4, 5]" [ngValue]="num">
+                {{ num }}
+              </option>
+            </select>
+            <p>{{ selected }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" *ngIf="!product">Wrong product ID!</div>
+</div>
+<app-loader *ngIf="isLoading"></app-loader>

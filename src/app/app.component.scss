@@ -12,10 +12,6 @@ body {
   color: white;
 }
 
-main {
-  min-height: 80vh;
-}
-
 .absolute {
   position: absolute;
   background: none;
@@ -27,4 +23,8 @@ header {
   background-position: top;
   background-size: cover;
   width: 100%;
+}
+
+footer {
+  margin-top: 8rem;
 }

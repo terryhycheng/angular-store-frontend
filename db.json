@@ -4,35 +4,46 @@
       "id": 1,
       "name": "Silver Centurion (Armor Suit Up Version)",
       "movie": "Iron Man 3",
+      "scale": "1/6",
+      "release_date_short": "Q3-Q4 2022",
       "model": "1/6th scale collectiable figure diecast",
       "quote": "'You’re right, we do need back up.' - Tony Stark",
-      "intro": "Facing down his adversary, Iron Man primes his cutting-edge armor to discharge high energy lasers in Iron Man 3. Known by its code name as the “Silver Centurion”, Iron Man Mark XXXIII is an Enhanced Energy Suit engineered by Tony Stark with more powerful repulsors. It was activated along with all the other suits when Tony ordered to initiate the “House Party Protocol”.<br/> Recreates one of the extraordinary armors from the Iron Legion, today Hot Toys is proud to present Silver Centurion (Armor Suit Up Version) as 1/6th scale collectible figure from Iron Man 3 collection. Features specially designed armor parts simulate the real time suiting up process and to illustrate its mechanical beauty.<br/> Exquisitely crafted based on Silver Centurion in Iron Man 3, the diecast figure features a newly painted helmeted head sculpt with battle damage effects; a newly designed helmet head with LED-light up function and detachable mask; armor suit skillfully painted in crimson red and silver coloring with a metallic appearance; intricate design of the armors translating its complex structure and mechanical details; LED light-up functions scattered throughout the arms, legs, Arc Reactor on chest and back; a pair of diecast forearm blades, interchangeable hands, and a figure stand.<br/>This one-of-a-kind armor will certainly make a powerful addition to your Marvel collection!",
+      "intro": [
+        "Facing down his adversary, Iron Man primes his cutting-edge armor to discharge high energy lasers in Iron Man 3. Known by its code name as the “Silver Centurion”, Iron Man Mark XXXIII is an Enhanced Energy Suit engineered by Tony Stark with more powerful repulsors. It was activated along with all the other suits when Tony ordered to initiate the “House Party Protocol”.",
+        "Recreates one of the extraordinary armors from the Iron Legion, today Hot Toys is proud to present Silver Centurion (Armor Suit Up Version) as 1/6th scale collectible figure from Iron Man 3 collection. Features specially designed armor parts simulate the real time suiting up process and to illustrate its mechanical beauty.",
+        "Exquisitely crafted based on Silver Centurion in Iron Man 3, the diecast figure features a newly painted helmeted head sculpt with battle damage effects; a newly designed helmet head with LED-light up function and detachable mask; armor suit skillfully painted in crimson red and silver coloring with a metallic appearance; intricate design of the armors translating its complex structure and mechanical details; LED light-up functions scattered throughout the arms, legs, Arc Reactor on chest and back; a pair of diecast forearm blades, interchangeable hands, and a figure stand.",
+        "This one-of-a-kind armor will certainly make a powerful addition to your Marvel collection!"
+      ],
       "release_date": "Approximately Q1 – Q2, 2023",
       "price": 249,
       "images": [
         {
+          "id": 7,
+          "url": "./assets/images/ironman/im_thumb.jpg"
+        },
+        {
           "id": 1,
-          "url": "./src/assets/images/ironman/im_1.jpg"
+          "url": "./assets/images/ironman/im_1.jpg"
         },
         {
           "id": 2,
-          "url": "./src/assets/images/ironman/im_2.jpg"
+          "url": "./assets/images/ironman/im_2.jpg"
         },
         {
           "id": 3,
-          "url": "./src/assets/images/ironman/im_3.jpg"
+          "url": "./assets/images/ironman/im_3.jpg"
         },
         {
           "id": 4,
-          "url": "./src/assets/images/ironman/im_4.jpg"
+          "url": "./assets/images/ironman/im_4.jpg"
         },
         {
           "id": 5,
-          "url": "./src/assets/images/ironman/im_5.jpg"
+          "url": "./assets/images/ironman/im_5.jpg"
         },
         {
           "id": 6,
-          "url": "./src/assets/images/ironman/im_6.jpg"
+          "url": "./assets/images/ironman/im_6.jpg"
         }
       ]
     },
@@ -41,34 +52,45 @@
       "name": "The Scarlet Witch",
       "movie": "Doctor Strange in the Multiverse of Madness",
       "model": "1/6th scale collectiable figure",
+      "scale": "1/6",
+      "release_date_short": "Q3-Q4 2022",
       "quote": "'You break the rules and you become a hero. I do it and I become the enemy.' - The Scarlet Witch",
-      "intro": "After the loss of Vision and a life-changing experience with her two imaginary children in WandaVision, Wanda Maximoff’s grief has triggered her to become the biggest threat in Doctor Strange in the Multiverse of Madness. She’s obsessed with using the potential of the multiverse to find an alternate reality where her twin sons are real and alive, and she’s willing to kill anyone who gets in the way of that goal.<br/>Inspired by the recently released Doctor Strange in the Multiverse of Madness, Hot Toys is excited to introduce The Scarlet Witch as 1/6th scale collectible figure from the bending universe.<br/>Beautifully crafted based on the appearance of Elizabeth Olsen as The Scarlet Witch in movie, the figure features a newly developed head sculpt and tiara with stunning likeness, two styles of front hair sculptures, specially applied luminous reflective effect on eyes to emulate Scarlet Witch using her abilities, faithful recreation of costume in scarlet red applied with dramatic weathering effects, highly-detailed accessories such as the Darkhold, different styles of power-using effects accessories, interchangeable hands with black finger tips and a figure stand.<br/>Expand your Marvel collection today with the stunning Scarlet Witch figure.",
+      "intro": [
+        "After the loss of Vision and a life-changing experience with her two imaginary children in WandaVision, Wanda Maximoff’s grief has triggered her to become the biggest threat in Doctor Strange in the Multiverse of Madness. She’s obsessed with using the potential of the multiverse to find an alternate reality where her twin sons are real and alive, and she’s willing to kill anyone who gets in the way of that goal.",
+        "Inspired by the recently released Doctor Strange in the Multiverse of Madness, Hot Toys is excited to introduce The Scarlet Witch as 1/6th scale collectible figure from the bending universe.",
+        "Beautifully crafted based on the appearance of Elizabeth Olsen as The Scarlet Witch in movie, the figure features a newly developed head sculpt and tiara with stunning likeness, two styles of front hair sculptures, specially applied luminous reflective effect on eyes to emulate Scarlet Witch using her abilities, faithful recreation of costume in scarlet red applied with dramatic weathering effects, highly-detailed accessories such as the Darkhold, different styles of power-using effects accessories, interchangeable hands with black finger tips and a figure stand.",
+        "Expand your Marvel collection today with the stunning Scarlet Witch figure."
+      ],
       "release_date": "Approximately Q3 – Q4, 2023",
       "price": 199,
       "images": [
         {
+          "id": 7,
+          "url": "./assets/images/scarlet_witch/sw_thumb.jpg"
+        },
+        {
           "id": 1,
-          "url": "./src/assets/images/scarlet_witch/sw_1.jpg"
+          "url": "./assets/images/scarlet_witch/sw_1.jpg"
         },
         {
           "id": 2,
-          "url": "./src/assets/images/scarlet_witch/sw_2.jpg"
+          "url": "./assets/images/scarlet_witch/sw_2.jpg"
         },
         {
           "id": 3,
-          "url": "./src/assets/images/scarlet_witch/sw_3.jpg"
+          "url": "./assets/images/scarlet_witch/sw_3.jpg"
         },
         {
           "id": 4,
-          "url": "./src/assets/images/scarlet_witch/sw_4.jpg"
+          "url": "./assets/images/scarlet_witch/sw_4.jpg"
         },
         {
           "id": 5,
-          "url": "./src/assets/images/scarlet_witch/sw_5.jpg"
+          "url": "./assets/images/scarlet_witch/sw_5.jpg"
         },
         {
           "id": 6,
-          "url": "./src/assets/images/scarlet_witch/sw_6.jpg"
+          "url": "./assets/images/scarlet_witch/sw_6.jpg"
         }
       ]
     },
@@ -77,34 +99,47 @@
       "name": "Thor (Deluxe Version)",
       "movie": "Thor: Love and Thunder",
       "model": "1/6th scale collectiable figure",
+      "scale": "1/6",
+      "release_date_short": "Q3-Q4 2022",
       "quote": "'He was no ordinary man. He was a god.' - Korg",
-      "intro": "Thor’s retirement is interrupted by a galactic killer known as Gorr the God Butcher, who seeks the extinction of the gods. To combat the threat, Thor enlists the help of his alliance and embark upon a harrowing cosmic adventure to uncover the mystery of the God Butcher’s vengeance and stop him before it’s too late. <br><br>In anticipation to the release of Thor: Love and Thunder, Hot Toys is thrilled to introduce a Deluxe Version of the new 1/6th scale collectible figure of the God of Thunder - Thor with his new metallic gold and blue costume!<br><br>The brand-new collectible figure is skillfully crafted based on the appearance of Chris Hemsworth’s as Thor in the movie. It features a head sculpt with specially applied with luminous reflective effect that accentuates Thor using his thunder power, a specialized body to depicts his muscular physique, red-colored cape, gold and blue body armor with LED light up function, LED light up Stormbreaker, assorted lightning effect accessories with luminous reflective effect applied, and a figure stand. <br><br>This Deluxe Version will exclusively include accessories for alternative styling, such as a LED light-up helmeted head sculpt, interchangeable chest armor, one pair of armored arms, and lightning effect accessories attachable to helmet.<br><br>What’s more, additional accessory for Thor will be unveiled soon! So stay tuned as we are about to reveal the surprise!  <br><br>This new Thor collectible figure will definitely be an incredible addition to your collection!<br>",
+      "intro": [
+        "Thor’s retirement is interrupted by a galactic killer known as Gorr the God Butcher, who seeks the extinction of the gods. To combat the threat, Thor enlists the help of his alliance and embark upon a harrowing cosmic adventure to uncover the mystery of the God Butcher’s vengeance and stop him before it’s too late. ",
+        "In anticipation to the release of Thor: Love and Thunder, Hot Toys is thrilled to introduce a Deluxe Version of the new 1/6th scale collectible figure of the God of Thunder - Thor with his new metallic gold and blue costume!",
+        "The brand-new collectible figure is skillfully crafted based on the appearance of Chris Hemsworth’s as Thor in the movie. It features a head sculpt with specially applied with luminous reflective effect that accentuates Thor using his thunder power, a specialized body to depicts his muscular physique, red-colored cape, gold and blue body armor with LED light up function, LED light up Stormbreaker, assorted lightning effect accessories with luminous reflective effect applied, and a figure stand. ",
+        "This Deluxe Version will exclusively include accessories for alternative styling, such as a LED light-up helmeted head sculpt, interchangeable chest armor, one pair of armored arms, and lightning effect accessories attachable to helmet.",
+        "What’s more, additional accessory for Thor will be unveiled soon! So stay tuned as we are about to reveal the surprise!  ",
+        "This new Thor collectible figure will definitely be an incredible addition to your collection!"
+      ],
       "release_date": "Approximately Q4, 2023 – Q1, 2024",
       "price": 199,
       "images": [
         {
+          "id": 7,
+          "url": "./assets/images/thor/thor_thumb.jpg"
+        },
+        {
           "id": 1,
-          "url": "./src/assets/images/thor/thor_1.jpg"
+          "url": "./assets/images/thor/thor_1.jpg"
         },
         {
           "id": 2,
-          "url": "./src/assets/images/thor/thor_2.jpg"
+          "url": "./assets/images/thor/thor_2.jpg"
         },
         {
           "id": 3,
-          "url": "./src/assets/images/thor/thor_3.jpg"
+          "url": "./assets/images/thor/thor_3.jpg"
         },
         {
           "id": 4,
-          "url": "./src/assets/images/thor/thor_4.jpg"
+          "url": "./assets/images/thor/thor_4.jpg"
         },
         {
           "id": 5,
-          "url": "./src/assets/images/thor/thor_5.jpg"
+          "url": "./assets/images/thor/thor_5.jpg"
         },
         {
           "id": 6,
-          "url": "./src/assets/images/thor/thor_6.jpg"
+          "url": "./assets/images/thor/thor_6.jpg"
         }
       ]
     },
@@ -113,34 +148,46 @@
       "name": "Doctor Strange",
       "movie": "Doctor Strange in the Multiverse of Madness",
       "model": "1/6th scale collectiable figure",
+      "scale": "1/6",
+      "release_date_short": "Q3-Q4 2022",
       "quote": "'You break the rules and you become a hero. I do it and I become the enemy.' - The Scarlet Witch",
-      "intro": "Marvel Studios’ Doctor Strange in the Multiverse of Madness continues to unlock the Multiverse in MCU and revealed more threats lurking through every dimension. The Master of Mystic Arts must journey into the unknown with mystical allies both old and new, and to confront variants of some familiar faces along the way.<br />To expand on the Marvel collection, Hot Toys officially presents Doctor Strange as 1/6th scale collectible figure inspired by Doctor Strange in the Multiverse of Madness.<br />Faithfully crafted based on the appearance of Benedict Cumberbatch as Doctor Strange in the movie, this figure features a newly developed head sculpt with short hair sculpture; an aesthetic recreation of the tunic outfit in layers, sculpted boots and arm wraps, a new Cloak of Levitation with blue patch; amazing accessories including The Book of Vishanti, a pair of handcuff, a number of mystic art effects, a dynamic figure base specially designed for the figure and the cape.<br />Shortly after the movie released, Hot Toys team is excited to enrich the collector experience by adding a newly developed Doctor Strange head sculpt with a third eye on forehead as seen in the post-credit scenes.<br />The new Doctor Strange figure is going to push your collection boundaries!",
+      "intro": [
+        "Marvel Studios’ Doctor Strange in the Multiverse of Madness continues to unlock the Multiverse in MCU and revealed more threats lurking through every dimension. The Master of Mystic Arts must journey into the unknown with mystical allies both old and new, and to confront variants of some familiar faces along the way.",
+        "To expand on the Marvel collection, Hot Toys officially presents Doctor Strange as 1/6th scale collectible figure inspired by Doctor Strange in the Multiverse of Madness.",
+        "Faithfully crafted based on the appearance of Benedict Cumberbatch as Doctor Strange in the movie, this figure features a newly developed head sculpt with short hair sculpture; an aesthetic recreation of the tunic outfit in layers, sculpted boots and arm wraps, a new Cloak of Levitation with blue patch; amazing accessories including The Book of Vishanti, a pair of handcuff, a number of mystic art effects, a dynamic figure base specially designed for the figure and the cape.",
+        "Shortly after the movie released, Hot Toys team is excited to enrich the collector experience by adding a newly developed Doctor Strange head sculpt with a third eye on forehead as seen in the post-credit scenes.",
+        "The new Doctor Strange figure is going to push your collection boundaries!"
+      ],
       "release_date": "Approximately Q3 – Q4, 2023",
       "price": 229,
       "images": [
         {
+          "id": 7,
+          "url": "./assets/images/dr_strange/ds_thumb.jpg"
+        },
+        {
           "id": 1,
-          "url": "./src/assets/images/dr_stange/ds_1.jpg"
+          "url": "./assets/images/dr_strange/ds_1.jpg"
         },
         {
           "id": 2,
-          "url": "./src/assets/images/dr_stange/ds_2.jpg"
+          "url": "./assets/images/dr_strange/ds_2.jpg"
         },
         {
           "id": 3,
-          "url": "./src/assets/images/dr_stange/ds_3.jpg"
+          "url": "./assets/images/dr_strange/ds_3.jpg"
         },
         {
           "id": 4,
-          "url": "./src/assets/images/dr_stange/ds_4.jpg"
+          "url": "./assets/images/dr_strange/ds_4.jpg"
         },
         {
           "id": 5,
-          "url": "./src/assets/images/dr_stange/ds_5.jpg"
+          "url": "./assets/images/dr_strange/ds_5.jpg"
         },
         {
           "id": 6,
-          "url": "./src/assets/images/dr_stange/ds_6.jpg"
+          "url": "./assets/images/dr_strange/ds_6.jpg"
         }
       ]
     },
@@ -149,34 +196,46 @@
       "name": "Black Widow",
       "movie": "Black Widow",
       "model": "1/6th scale collectiable figure",
+      "scale": "1/6",
+      "release_date_short": "Q3-Q4 2022",
       "quote": "'One thing is for sure, I’m done running with my past.' - Natasha Romanoff",
-      "intro": "She’s now here for the unfinished business! Pursued by a force that will stop at nothing to bring her down, Natasha Romanoff aka Black Widow must deal with her history as a spy and the broken relationships left in her wake long before she became an Avenger.<br />Celebrating the official release of Marvel Studios’ Black Widow, Hot Toys is delighted to present Black Widow as 1/6th scale collectible figure that showcases the highest standards in artistic excellence.<br />Exquisitely crafted based on the image of Scarlett Johansson as Natasha Romanoff/Black Widow in the eponymous production, the figure features a newly developed dreadlock hair sculpture and face sculpt with impressive likeness; finely tailored black tactical outfit with gold accents; highly-detailed weapons including a pair of standard batons and a pair of articulated batons with 3 types of interchangeable tips enable different battling styles; pistols; interchangeable hands for signature poses, and a movie-themed figure stand.<br />A Special Edition available only in selected markets will specially include a Taskmaster shield as bonus accessory.<br />Her legacy will go on with this remarkable Black Widow figure!",
+      "intro": [
+        "She’s now here for the unfinished business! Pursued by a force that will stop at nothing to bring her down, Natasha Romanoff aka Black Widow must deal with her history as a spy and the broken relationships left in her wake long before she became an Avenger.",
+        "Celebrating the official release of Marvel Studios’ Black Widow, Hot Toys is delighted to present Black Widow as 1/6th scale collectible figure that showcases the highest standards in artistic excellence.",
+        "Exquisitely crafted based on the image of Scarlett Johansson as Natasha Romanoff/Black Widow in the eponymous production, the figure features a newly developed dreadlock hair sculpture and face sculpt with impressive likeness; finely tailored black tactical outfit with gold accents; highly-detailed weapons including a pair of standard batons and a pair of articulated batons with 3 types of interchangeable tips enable different battling styles; pistols; interchangeable hands for signature poses, and a movie-themed figure stand.",
+        "A Special Edition available only in selected markets will specially include a Taskmaster shield as bonus accessory.",
+        "Her legacy will go on with this remarkable Black Widow figure!"
+      ],
       "release_date": "Approximately Q4, 2022 – Q1, 2023",
       "price": 199,
       "images": [
         {
+          "id": 7,
+          "url": "./assets/images/black_widow/bw_thumb.jpg"
+        },
+        {
           "id": 1,
-          "url": "./src/assets/images/black_widow/bw_1.jpg"
+          "url": "./assets/images/black_widow/bw_1.jpg"
         },
         {
           "id": 2,
-          "url": "./src/assets/images/black_widow/bw_2.jpg"
+          "url": "./assets/images/black_widow/bw_2.jpg"
         },
         {
           "id": 3,
-          "url": "./src/assets/images/black_widow/bw_3.jpg"
+          "url": "./assets/images/black_widow/bw_3.jpg"
         },
         {
           "id": 4,
-          "url": "./src/assets/images/black_widow/bw_4.jpg"
+          "url": "./assets/images/black_widow/bw_4.jpg"
         },
         {
           "id": 5,
-          "url": "./src/assets/images/black_widow/bw_5.jpg"
+          "url": "./assets/images/black_widow/bw_5.jpg"
         },
         {
           "id": 6,
-          "url": "./src/assets/images/black_widow/bw_6.jpg"
+          "url": "./assets/images/black_widow/bw_6.jpg"
         }
       ]
     }
