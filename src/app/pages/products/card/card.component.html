@@ -1,5 +1,14 @@
 <a routerLink="/product/{{ product.id }}">
-  <img [src]="product.images[0].url" alt="" />
+  <div
+    [ngStyle]="{ 'background-image': 'url(' + product.images[0].url + ')' }"
+    class="image-box"
+  >
+    <img
+      *ngIf="product.isNew"
+      src="../../../assets/images/newly_launched.png"
+      alt=""
+    />
+  </div>
   <div class="container">
     <div class="container-left">
       <h3>{{ product.name }}</h3>

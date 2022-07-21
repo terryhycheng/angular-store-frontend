@@ -1,0 +1,19 @@
+<div class="container">
+  <h2>Figure Gallery</h2>
+  <div class="gallery-box">
+    <img
+      *ngFor="let image of product.images"
+      [src]="image.url"
+      [ngClass]="image.id >= 7 ? 'hidden' : ''"
+      alt=""
+      width="100%"
+      (click)="openModal(image.id)"
+    />
+  </div>
+</div>
+<div id="modal" *ngIf="isModal" (click)="closeModal()">
+  <div
+    [ngStyle]="{ 'background-image': 'url(' + modalImageUrl + ')' }"
+    id="modal-image-box"
+  ></div>
+</div>

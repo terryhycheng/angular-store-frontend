@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
-import { MatSelectModule } from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -24,6 +23,8 @@ import { AboutContentComponent } from './pages/about/about-content/about-content
 import { ContactContentComponent } from './pages/contact/contact-content/contact-content.component';
 import { CardComponent } from './pages/products/card/card.component';
 import { LoaderComponent } from './components/loader/loader.component';
+import { CharacterMidbannerComponent } from './pages/product-details/character-midbanner/character-midbanner.component';
+import { CharacterGalleryComponent } from './pages/product-details/character-gallery/character-gallery.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,8 @@ import { LoaderComponent } from './components/loader/loader.component';
     ContactContentComponent,
     CardComponent,
     LoaderComponent,
+    CharacterMidbannerComponent,
+    CharacterGalleryComponent,
   ],
   imports: [
     BrowserModule,
@@ -51,7 +54,6 @@ import { LoaderComponent } from './components/loader/loader.component';
     HttpClientModule,
     BrowserAnimationsModule,
     MatIconModule,
-    MatSelectModule,
     FormsModule,
   ],
   providers: [],

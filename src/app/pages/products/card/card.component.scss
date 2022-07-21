@@ -14,6 +14,15 @@ h4 {
   line-height: 120%;
 }
 
+.image-box {
+  height: clamp(200px, 50vh, 400px);
+  min-width: 300px;
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+
 img {
   width: clamp(200px, 100%, 500px);
 }

@@ -5,9 +5,10 @@
       "name": "Silver Centurion (Armor Suit Up Version)",
       "movie": "Iron Man 3",
       "scale": "1/6",
+      "isNew": false,
       "release_date_short": "Q3-Q4 2022",
       "model": "1/6th scale collectiable figure diecast",
-      "quote": "'You’re right, we do need back up.' - Tony Stark",
+      "quote": ["'You’re right, we do need back up.'", "- Tony Stark"],
       "intro": [
         "Facing down his adversary, Iron Man primes his cutting-edge armor to discharge high energy lasers in Iron Man 3. Known by its code name as the “Silver Centurion”, Iron Man Mark XXXIII is an Enhanced Energy Suit engineered by Tony Stark with more powerful repulsors. It was activated along with all the other suits when Tony ordered to initiate the “House Party Protocol”.",
         "Recreates one of the extraordinary armors from the Iron Legion, today Hot Toys is proud to present Silver Centurion (Armor Suit Up Version) as 1/6th scale collectible figure from Iron Man 3 collection. Features specially designed armor parts simulate the real time suiting up process and to illustrate its mechanical beauty.",
@@ -53,8 +54,12 @@
       "movie": "Doctor Strange in the Multiverse of Madness",
       "model": "1/6th scale collectiable figure",
       "scale": "1/6",
+      "isNew": true,
       "release_date_short": "Q3-Q4 2022",
-      "quote": "'You break the rules and you become a hero. I do it and I become the enemy.' - The Scarlet Witch",
+      "quote": [
+        "'You break the rules and you become a hero. I do it and I become the enemy.'",
+        "- The Scarlet Witch"
+      ],
       "intro": [
         "After the loss of Vision and a life-changing experience with her two imaginary children in WandaVision, Wanda Maximoff’s grief has triggered her to become the biggest threat in Doctor Strange in the Multiverse of Madness. She’s obsessed with using the potential of the multiverse to find an alternate reality where her twin sons are real and alive, and she’s willing to kill anyone who gets in the way of that goal.",
         "Inspired by the recently released Doctor Strange in the Multiverse of Madness, Hot Toys is excited to introduce The Scarlet Witch as 1/6th scale collectible figure from the bending universe.",
@@ -100,8 +105,9 @@
       "movie": "Thor: Love and Thunder",
       "model": "1/6th scale collectiable figure",
       "scale": "1/6",
+      "isNew": true,
       "release_date_short": "Q3-Q4 2022",
-      "quote": "'He was no ordinary man. He was a god.' - Korg",
+      "quote": ["'He was no ordinary man. He was a god.'", "- Korg"],
       "intro": [
         "Thor’s retirement is interrupted by a galactic killer known as Gorr the God Butcher, who seeks the extinction of the gods. To combat the threat, Thor enlists the help of his alliance and embark upon a harrowing cosmic adventure to uncover the mystery of the God Butcher’s vengeance and stop him before it’s too late. ",
         "In anticipation to the release of Thor: Love and Thunder, Hot Toys is thrilled to introduce a Deluxe Version of the new 1/6th scale collectible figure of the God of Thunder - Thor with his new metallic gold and blue costume!",
@@ -149,8 +155,12 @@
       "movie": "Doctor Strange in the Multiverse of Madness",
       "model": "1/6th scale collectiable figure",
       "scale": "1/6",
+      "isNew": true,
       "release_date_short": "Q3-Q4 2022",
-      "quote": "'You break the rules and you become a hero. I do it and I become the enemy.' - The Scarlet Witch",
+      "quote": [
+        "'Dreams are windows into the lives of our Multiversal selves.'",
+        "- Doctor Strange"
+      ],
       "intro": [
         "Marvel Studios’ Doctor Strange in the Multiverse of Madness continues to unlock the Multiverse in MCU and revealed more threats lurking through every dimension. The Master of Mystic Arts must journey into the unknown with mystical allies both old and new, and to confront variants of some familiar faces along the way.",
         "To expand on the Marvel collection, Hot Toys officially presents Doctor Strange as 1/6th scale collectible figure inspired by Doctor Strange in the Multiverse of Madness.",
@@ -197,8 +207,12 @@
       "movie": "Black Widow",
       "model": "1/6th scale collectiable figure",
       "scale": "1/6",
+      "isNew": false,
       "release_date_short": "Q3-Q4 2022",
-      "quote": "'One thing is for sure, I’m done running with my past.' - Natasha Romanoff",
+      "quote": [
+        "'One thing is for sure, I’m done running with my past.'",
+        "- Natasha Romanoff"
+      ],
       "intro": [
         "She’s now here for the unfinished business! Pursued by a force that will stop at nothing to bring her down, Natasha Romanoff aka Black Widow must deal with her history as a spy and the broken relationships left in her wake long before she became an Avenger.",
         "Celebrating the official release of Marvel Studios’ Black Widow, Hot Toys is delighted to present Black Widow as 1/6th scale collectible figure that showcases the highest standards in artistic excellence.",

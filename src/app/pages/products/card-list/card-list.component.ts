@@ -10,13 +10,16 @@ import { ToyData } from '../../../services/models/toys.model';
 })
 export class CardListComponent implements OnInit {
   products: ToyData[] = [];
+  isLoading: boolean = false;
 
   constructor(private productService: ProductsService) {}
 
   ngOnInit(): void {
+    this.isLoading = true;
     try {
       this.productService.getData().subscribe((data) => {
         this.products.push(...data);
+        this.isLoading = false;
       });
     } catch (error) {
       console.error(error);

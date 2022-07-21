@@ -1,0 +1,12 @@
+<div id="content-box" *ngIf="!isLoading">
+  <div class="container">
+    <div>
+      <h3>{{ product.quote[0] }}</h3>
+      <p>{{ product.quote[1] }}</p>
+    </div>
+    <div
+      [ngStyle]="{ 'background-image': 'url(' + product.images[4].url + ')' }"
+      class="image-box"
+    ></div>
+  </div>
+</div>

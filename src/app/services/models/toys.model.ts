@@ -10,6 +10,7 @@ export interface ToyData {
   model: string;
   quote: string;
   scale: string;
+  isNew: boolean;
   release_date_short: string;
   intro: string;
   release_date: string;

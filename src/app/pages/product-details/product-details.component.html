@@ -1,18 +1,26 @@
 <div *ngIf="!isLoading">
   <div class="container" *ngIf="product">
+    <!-- Navigation Buttons -->
     <div id="button-wrapper">
       <a routerLink="/"
         ><mat-icon fontIcon="arrow_back"></mat-icon> Back to Products</a
       >
-      <a routerLink="/cart">Go to Cart</a>
+      <a routerLink="/cart" id="cart-button">Go to Cart</a>
     </div>
+    <!-- Main Content Box -->
     <div id="content-wrapper">
+      <!-- Photo Box -->
       <div
         [ngStyle]="{ 'background-image': 'url(' + product.images[1].url + ')' }"
         id="image-box"
       >
-        <img src="../../../assets/images/newly_launched.png" alt="" />
+        <img
+          *ngIf="product.isNew"
+          src="../../../assets/images/newly_launched.png"
+          alt=""
+        />
       </div>
+      <!-- Text Content Box -->
       <div class="text-wrapper">
         <div>
           <h2>{{ product.name }}</h2>
@@ -25,19 +33,55 @@
             {{ paragraph }}
           </p>
           <h2>${{ product.price }}</h2>
+          <!-- Form Box -->
           <div id="qty-box">
             <p>Quantity</p>
-            <select>
-              <option *ngFor="let num of [1, 2, 3, 4, 5]" [ngValue]="num">
-                {{ num }}
-              </option>
-            </select>
-            <p>{{ selected }}</p>
+            <form
+              #form="ngForm"
+              (submit)="onSubmit(form)"
+              id="form-wrapper"
+              (change)="onChange()"
+            >
+              <select
+                [(ngModel)]="selected"
+                class="select-box"
+                name="quantity"
+                required
+              >
+                <option *ngFor="let num of [1, 2, 3, 4, 5]" [ngValue]="num">
+                  {{ num }}
+                </option>
+              </select>
+              <button
+                type="submit"
+                name="sumbit"
+                class="submit"
+                [ngClass]="form.invalid ? 'disable' : ''"
+                [disabled]="form.invalid"
+              >
+                Add to Cart
+              </button>
+              <div id="message-box" *ngIf="isSubmitted">Added to the cart!</div>
+            </form>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <!-- Middle Banner -->
+  <app-character-midbanner
+    [product]="product"
+    [isLoading]="isLoading"
+  ></app-character-midbanner>
+  <!-- Gallery -->
+  <app-character-gallery [product]="product"></app-character-gallery>
+  <div id="btt-box">
+    <button (click)="backToTop()">
+      <mat-icon color="white">arrow_upward</mat-icon>back to top
+    </button>
+  </div>
+  <!-- 404 Not Found Message -->
   <div class="container" *ngIf="!product">Wrong product ID!</div>
 </div>
+<!-- Loading Spinner -->
 <app-loader *ngIf="isLoading"></app-loader>

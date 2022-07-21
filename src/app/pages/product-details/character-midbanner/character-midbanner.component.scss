@@ -1,0 +1,37 @@
+@use "../../../styles/" as *;
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 5rem;
+  @include maxWidth();
+  h3 {
+    line-height: 120%;
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-family: "oswald";
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+}
+
+#content-box {
+  margin: 8rem 0;
+  padding: 5rem 0;
+  background: url("../../../../assets/images/black_bg.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.image-box {
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 0px 15px rgba(#000, 0.3);
+}

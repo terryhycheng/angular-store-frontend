@@ -17,16 +17,16 @@ export class MenuBarComponent implements OnInit {
       text: 'Products',
     },
     {
-      path: '/cart',
-      text: 'Cart',
-    },
-    {
       path: '/about',
       text: 'About',
     },
     {
       path: '/contact',
       text: 'Contact',
+    },
+    {
+      path: '/cart',
+      text: 'Cart',
     },
   ];
 

@@ -1,0 +1,54 @@
+@use "../../../styles/" as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  @include maxWidth();
+
+  h2 {
+    line-height: 120%;
+  }
+}
+
+.gallery-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+
+  @include mobile() {
+    grid-template-columns: 1fr;
+  }
+
+  img {
+    cursor: zoom-in;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+#modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  flex-direction: column;
+  position: fixed;
+  z-index: 10;
+  background-color: rgba($color: #000000, $alpha: 0.85);
+  width: 100vw;
+  height: 100vh;
+  cursor: zoom-out;
+}
+
+#modal-image-box {
+  position: relative;
+  height: 95%;
+  width: 95%;
+  max-width: 1200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

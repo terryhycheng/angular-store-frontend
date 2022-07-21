@@ -4,13 +4,6 @@
   @include maxWidth();
 }
 
-a {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-}
-
 h2,
 h3 {
   line-height: 130%;
@@ -40,6 +33,18 @@ p {
   display: flex;
   justify-content: space-between;
   margin: 2rem 0;
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  #cart-button {
+    @include button();
+    margin: 0;
+  }
 }
 
 #content-wrapper {
@@ -94,6 +99,65 @@ p {
 }
 
 .select-box {
-  width: 100px;
-  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 0.8rem;
+  background-color: rgba($color: #000000, $alpha: 0);
+  color: white;
+
+  option {
+    background-color: rgba($color: #000, $alpha: 1);
+  }
+}
+
+.submit {
+  @include button();
+  margin: 0 1rem;
+  min-width: 200px;
+  padding: 0.8rem;
+}
+
+.disable {
+  cursor: auto;
+  opacity: 0.2;
+
+  &:hover {
+    background-color: rgba(#000000, 0);
+  }
+}
+
+#form-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 1rem;
+}
+
+#message-box {
+  display: flex;
+  font-family: "oswald";
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(#32bc55, 0.8);
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+#btt-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 5rem;
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include button();
+    width: 15%;
+    gap: 0.5rem;
+    text-transform: uppercase;
+    font-family: "oswald";
+  }
 }

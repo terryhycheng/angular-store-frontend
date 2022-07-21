@@ -17,6 +17,10 @@ body {
   background: none;
 }
 
+main {
+  min-height: 50vh;
+}
+
 header {
   position: relative;
   background-image: url(../assets/images/black_bg.jpg);
