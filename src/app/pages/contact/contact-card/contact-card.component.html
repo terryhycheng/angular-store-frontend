@@ -1,0 +1,26 @@
+<div class="container">
+  <div
+    id="img-box"
+    *ngIf="store.imageURL"
+    [ngStyle]="{
+      'background-image': 'url(' + store.imageURL + ')'
+    }"
+  ></div>
+  <div
+    id="img-box"
+    *ngIf="!store.imageURL"
+    [ngStyle]="{
+      'background-image': 'url(' + './assets/images/hottoys_logo.png' + ')',
+      'background-size': 'contain'
+    }"
+  ></div>
+  <div id="content-box">
+    <h2>{{ store.name }}</h2>
+    <p *ngIf="store.tel"><strong>Tel:</strong> {{ store.tel }}</p>
+    <p *ngIf="store.email">
+      <strong>Email:</strong>
+      <a [href]="'mailto:' + store.email">{{ store.email }}</a>
+    </p>
+    <p><strong>Address:</strong> {{ store.address }}</p>
+  </div>
+</div>

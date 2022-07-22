@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { CartService } from 'src/app/services/cart.service';
+import { CartData } from 'src/app/services/models/cart-data.model';
 import { ToyData } from 'src/app/services/models/toys.model';
 import { ProductsService } from 'src/app/services/products.service';
 
@@ -18,7 +20,8 @@ export class ProductDetailsComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private productService: ProductsService
+    private productService: ProductsService,
+    private cartService: CartService
   ) {}
 
   ngOnInit(): void {
@@ -30,10 +33,10 @@ export class ProductDetailsComponent implements OnInit {
       this.productService
         .getOneData(this.productId)
         .subscribe((data) => (this.product = data));
-      this.isLoading = false;
     } catch (error) {
       console.error(error);
     }
+    this.isLoading = false;
   }
 
   onChange() {
@@ -41,11 +44,16 @@ export class ProductDetailsComponent implements OnInit {
   }
 
   onSubmit(form: NgForm) {
-    const data = {
+    const data: CartData = {
       productId: this.productId,
+      name: this.product.name,
+      model: this.product.model,
+      price: this.product.price,
+      imageUrl: this.product.images[0].url,
       quantity: this.selected,
     };
-    console.log(data);
+    // console.log(data);
+    this.cartService.addtoCart(data);
     this.isSubmitted = true;
     form.reset();
   }

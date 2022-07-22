@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from 'src/app/services/cart.service';
 
 interface Link {
   path: string;
@@ -11,6 +12,7 @@ interface Link {
   styleUrls: ['./menu-bar.component.scss'],
 })
 export class MenuBarComponent implements OnInit {
+  cartLength: string;
   links: Link[] = [
     {
       path: '/',
@@ -30,7 +32,11 @@ export class MenuBarComponent implements OnInit {
     },
   ];
 
-  constructor() {}
+  constructor(private cartService: CartService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.cartService
+      .getCart()
+      .subscribe((data) => (this.links[3].text = `Cart (${data.length})`));
+  }
 }

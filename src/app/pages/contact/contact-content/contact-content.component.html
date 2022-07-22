@@ -1,1 +1,10 @@
-<h2>Contact</h2>
+<div class="container">
+  <div id="main-banner-box"></div>
+  <div>
+    <h2>Store Locations</h2>
+    <app-contact-card
+      *ngFor="let store of storeData"
+      [store]="store"
+    ></app-contact-card>
+  </div>
+</div>

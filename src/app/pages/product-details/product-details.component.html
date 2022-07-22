@@ -72,16 +72,30 @@
   <app-character-midbanner
     [product]="product"
     [isLoading]="isLoading"
+    *ngIf="product"
   ></app-character-midbanner>
   <!-- Gallery -->
-  <app-character-gallery [product]="product"></app-character-gallery>
-  <div id="btt-box">
-    <button (click)="backToTop()">
+  <app-character-gallery
+    [product]="product"
+    *ngIf="product"
+  ></app-character-gallery>
+  <div class="btt-box">
+    <button (click)="backToTop()" *ngIf="product">
       <mat-icon color="white">arrow_upward</mat-icon>back to top
     </button>
   </div>
   <!-- 404 Not Found Message -->
-  <div class="container" *ngIf="!product">Wrong product ID!</div>
+  <div *ngIf="!product">
+    <div class="container" id="err-box">
+      <h2>Error Occured!</h2>
+      <p>Please go back to homepage.</p>
+    </div>
+    <div class="btt-box">
+      <button routerLink="/">
+        <mat-icon color="white">arrow_back</mat-icon>back to home
+      </button>
+    </div>
+  </div>
 </div>
 <!-- Loading Spinner -->
 <app-loader *ngIf="isLoading"></app-loader>

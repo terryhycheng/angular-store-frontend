@@ -1,4 +1,25 @@
 <div class="container">
   <h2>Cart</h2>
+  <div class="content-container">
+    <div>
+      <h3>Items</h3>
+      <hr />
+    </div>
+    <div>
+      <h3>Cost</h3>
+      <hr />
+    </div>
+  </div>
+  <div class="content-container">
+    <div>
+      <app-cart-card
+        *ngFor="let data of cartData"
+        [data]="data"
+      ></app-cart-card>
+    </div>
+    <div>
+      <h2></h2>
+    </div>
+  </div>
   <a routerLink="/">Continue Shopping</a>
 </div>

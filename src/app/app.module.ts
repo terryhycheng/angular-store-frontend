@@ -25,6 +25,8 @@ import { CardComponent } from './pages/products/card/card.component';
 import { LoaderComponent } from './components/loader/loader.component';
 import { CharacterMidbannerComponent } from './pages/product-details/character-midbanner/character-midbanner.component';
 import { CharacterGalleryComponent } from './pages/product-details/character-gallery/character-gallery.component';
+import { ContactCardComponent } from './pages/contact/contact-card/contact-card.component';
+import { CartCardComponent } from './pages/cart/cart-card/cart-card.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +49,8 @@ import { CharacterGalleryComponent } from './pages/product-details/character-gal
     LoaderComponent,
     CharacterMidbannerComponent,
     CharacterGalleryComponent,
+    ContactCardComponent,
+    CartCardComponent,
   ],
   imports: [
     BrowserModule,

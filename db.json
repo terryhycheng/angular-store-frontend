@@ -8,7 +8,10 @@
       "isNew": false,
       "release_date_short": "Q3-Q4 2022",
       "model": "1/6th scale collectiable figure diecast",
-      "quote": ["'You’re right, we do need back up.'", "- Tony Stark"],
+      "quote": [
+        "'You’re right, we do need back up.'",
+        "- Tony Stark"
+      ],
       "intro": [
         "Facing down his adversary, Iron Man primes his cutting-edge armor to discharge high energy lasers in Iron Man 3. Known by its code name as the “Silver Centurion”, Iron Man Mark XXXIII is an Enhanced Energy Suit engineered by Tony Stark with more powerful repulsors. It was activated along with all the other suits when Tony ordered to initiate the “House Party Protocol”.",
         "Recreates one of the extraordinary armors from the Iron Legion, today Hot Toys is proud to present Silver Centurion (Armor Suit Up Version) as 1/6th scale collectible figure from Iron Man 3 collection. Features specially designed armor parts simulate the real time suiting up process and to illustrate its mechanical beauty.",
@@ -107,7 +110,10 @@
       "scale": "1/6",
       "isNew": true,
       "release_date_short": "Q3-Q4 2022",
-      "quote": ["'He was no ordinary man. He was a god.'", "- Korg"],
+      "quote": [
+        "'He was no ordinary man. He was a god.'",
+        "- Korg"
+      ],
       "intro": [
         "Thor’s retirement is interrupted by a galactic killer known as Gorr the God Butcher, who seeks the extinction of the gods. To combat the threat, Thor enlists the help of his alliance and embark upon a harrowing cosmic adventure to uncover the mystery of the God Butcher’s vengeance and stop him before it’s too late. ",
         "In anticipation to the release of Thor: Love and Thunder, Hot Toys is thrilled to introduce a Deluxe Version of the new 1/6th scale collectible figure of the God of Thunder - Thor with his new metallic gold and blue costume!",
@@ -292,34 +298,33 @@
       "imageURL": "http://www.hottoys.com.hk/photos/DS1340101221jKj.jpg"
     }
   ],
-  "local_cart": [],
-  "users": [
+  "local_cart": [
     {
-      "id": 1,
-      "username": "testing",
-      "firstName": "terry",
-      "lastName": "cheng",
-      "password": "69609055",
-      "orders": [
-        {
-          "id": 1,
-          "ref_no": "348291023085",
-          "products": [
-            {
-              "product_id": 1,
-              "quantity": 2
-            },
-            {
-              "product_id": 3,
-              "quantity": 1
-            },
-            {
-              "product_id": 4,
-              "quantity": 3
-            }
-          ]
-        }
-      ]
+      "productId": "2",
+      "name": "The Scarlet Witch",
+      "model": "1/6th scale collectiable figure",
+      "price": 199,
+      "imageUrl": "./assets/images/scarlet_witch/sw_thumb.jpg",
+      "quantity": 4,
+      "id": 1
+    },
+    {
+      "productId": "1",
+      "name": "Silver Centurion (Armor Suit Up Version)",
+      "model": "1/6th scale collectiable figure diecast",
+      "price": 249,
+      "imageUrl": "./assets/images/ironman/im_thumb.jpg",
+      "quantity": 4,
+      "id": 2
+    },
+    {
+      "productId": "3",
+      "name": "Thor (Deluxe Version)",
+      "model": "1/6th scale collectiable figure",
+      "price": 199,
+      "imageUrl": "./assets/images/thor/thor_thumb.jpg",
+      "quantity": 4,
+      "id": 3
     }
   ]
 }
