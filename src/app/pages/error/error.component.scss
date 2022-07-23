@@ -1,0 +1,52 @@
+@use "../../styles/" as *;
+
+.container {
+  @include maxWidth();
+}
+
+h2,
+h3 {
+  line-height: 130%;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+  text-transform: none;
+  font-weight: 100;
+}
+
+p {
+  font-weight: 100;
+}
+
+.btt-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 5rem;
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include button();
+    width: 15%;
+    gap: 0.5rem;
+    text-transform: uppercase;
+    font-family: "oswald";
+  }
+}
+
+#err-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  min-height: 40vh;
+}

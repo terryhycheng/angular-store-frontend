@@ -1,35 +1,54 @@
-# AngularStoreFrontend
+# Hot toys E-commerce Store - Angular
+
+![main banner](./src/assets/images/github-banner.jpg)
+
+Demo link: [https://angular-hottoys-store-frontend.herokuapp.com/](https://angular-hottoys-store-frontend.herokuapp.com/)
+
+As a Marval fans, I always admire Hot Toys because of their high quality products. In this project, I took their products as inspiration and re-designed their website by using one of the JS framework - [Angular](https://angular.io/).
+
+- [Hot toys E-commerce Store - Angular](#hot-toys-e-commerce-store---angular)
+  - [Front-end Design](#front-end-design)
+  - [Usage](#usage)
+    - [1. Install Dependency](#1-install-dependency)
+    - [2. Development server](#2-development-server)
+    - [3. Build](#3-build)
+    - [4. Production server](#4-production-server)
+  - [Data Handling](#data-handling)
+  - [Declaimers](#declaimers)
+
+## Front-end Design
+
+I started this project from stretch and finished UI/UX design before diving into coding. Here is the link of my high-fidelity design.
+
+Figma Link: [https://www.figma.com/file/bMlv7d1c26XRf1qjzpKuRk/Udacity-Apps?node-id=87%3A2346](https://www.figma.com/file/bMlv7d1c26XRf1qjzpKuRk/Udacity-Apps?node-id=87%3A2346)
+
+## Usage
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.6.
 
-- [AngularStoreFrontend](#angularstorefrontend)
-  - [Development server](#development-server)
-  - [Code scaffolding](#code-scaffolding)
-  - [Build](#build)
-  - [Running unit tests](#running-unit-tests)
-  - [Running end-to-end tests](#running-end-to-end-tests)
-  - [Further help](#further-help)
+### 1. Install Dependency
 
-## Development server
+After clone the project, run `npm install` to install all dependencies this project needs.
+
+### 2. Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
+### 3. Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+### 4. Production server
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `npm run start` to start a production server. If you don't set up `process.env.PORT` in environment, the default port is `8081`. You can change the port in `server.js`.
 
-## Running end-to-end tests
+## Data Handling
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Data for products was put on another Heroku app as an Express server to handle requests and responses for data fetching.
 
-## Further help
+Cart data and order data will be stored in `localStorage` of your browser.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Declaimers
+
+- This project is only for porfolio & learning purpose, not for commercial usage.
+- The copyrights of visual and text contents belong to [Hot Toys Limited](http://www.hottoys.com.hk/)
