@@ -1,5 +1,5 @@
 export type CartData = {
-  productId: string;
+  id: string;
   name: string;
   model: string;
   price: number;

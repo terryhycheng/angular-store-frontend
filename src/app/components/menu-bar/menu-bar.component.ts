@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from 'src/app/services/cart.service';
+import { CartData } from 'src/app/services/models/cart-data.model';
 
 interface Link {
   path: string;
@@ -12,7 +13,7 @@ interface Link {
   styleUrls: ['./menu-bar.component.scss'],
 })
 export class MenuBarComponent implements OnInit {
-  cartLength: string;
+  cartLength: number = 0;
   links: Link[] = [
     {
       path: '/',
@@ -35,8 +36,10 @@ export class MenuBarComponent implements OnInit {
   constructor(private cartService: CartService) {}
 
   ngOnInit(): void {
+    this.cartLength = this.cartService.getCart().length;
     this.cartService
-      .getCart()
-      .subscribe((data) => (this.links[3].text = `Cart (${data.length})`));
+      .watchStorage()
+      .subscribe((data: CartData[]) => (this.cartLength = data.length));
+    this.links[3].text = this.cartLength ? `Cart (${this.cartLength})` : 'Cart';
   }
 }
