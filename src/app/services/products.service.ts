@@ -14,8 +14,4 @@ export class ProductsService {
       'https://angular-hottoys-store-data.herokuapp.com/toys'
     );
   }
-
-  getOneData(id: string): Observable<ToyData> {
-    return this.http.get<ToyData>(`http://localhost:5000/toys/${id}`);
-  }
 }

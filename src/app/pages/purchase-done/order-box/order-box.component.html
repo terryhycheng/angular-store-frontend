@@ -1,0 +1,13 @@
+<div class="container" id="content-box">
+  <div
+    [ngStyle]="{ 'background-image': 'url(' + data.imageUrl + ')' }"
+    id="image-box"
+  ></div>
+  <div class="flex" id="detail-box">
+    <h2>{{ data.name }}</h2>
+    <p id="modal">{{ data.model }}</p>
+  </div>
+  <div class="flex" id="quantity-box">
+    <h3>X {{ data.quantity }}</h3>
+  </div>
+</div>

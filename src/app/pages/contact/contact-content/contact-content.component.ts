@@ -8,13 +8,16 @@ import { StoreLocationsService } from 'src/app/services/store-locations.service'
   styleUrls: ['./contact-content.component.scss'],
 })
 export class ContactContentComponent implements OnInit {
+  isLoading: boolean = false;
   storeData: StoreData[];
 
   constructor(private storeLocationsService: StoreLocationsService) {}
 
   ngOnInit(): void {
+    this.isLoading = true;
     this.storeLocationsService.getStore().subscribe((data) => {
       this.storeData = data;
+      this.isLoading = false;
     });
   }
 }

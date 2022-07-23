@@ -12,10 +12,6 @@ app.get("/*", (req, res) =>
   res.sendFile("index.html", { root: "dist/angular-store-frontend/" })
 );
 
-app.get("/data", (req, res) => {
-  res.sendFile("db.json", { root: "./" });
-});
-
 // Start the app by listening on the default Heroku port
 app.listen(port, function () {
   console.log(`starting app on: http://localhost:${port}`);

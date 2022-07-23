@@ -1,0 +1,20 @@
+@use "../../styles/" as *;
+
+.btt-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 5rem;
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include button();
+    width: clamp(200px, 100%, 300px);
+    gap: 0.5rem;
+    text-transform: uppercase;
+    font-family: "oswald";
+  }
+}

@@ -1,5 +1,9 @@
 @use "../../styles/" as *;
 
+* {
+  line-height: 120%;
+}
+
 .container {
   padding-top: 5rem;
   display: flex;
@@ -12,22 +16,90 @@ h2 {
   text-align: center;
 }
 
+button,
 a {
-  padding: 1rem 3rem;
-  border: 1px solid white;
-  border-radius: 5px;
-  text-align: center;
-  margin: auto;
-  transition: all 0.3s;
-
-  &:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-  }
+  @include button();
+  width: 100%;
+  margin-top: 1rem;
+  font-size: 1rem;
+  padding: 1rem 0;
 }
 
 .content-container {
   display: grid;
-  grid-template-columns: 60% 1fr;
+  grid-template-columns: 70% 1fr;
   gap: 3rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+}
+
+hr {
+  margin-top: 3vh;
+  width: 100%;
+}
+
+#total-price-box {
+  margin-bottom: 3rem;
+}
+
+#total-price {
+  text-align: right;
+}
+
+.form-box {
+  margin-top: 0.5rem;
+  grid-template-columns: 60% 1fr;
+}
+
+input {
+  margin: 0.5rem 0;
+}
+
+input,
+select {
+  height: 2rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  border: solid 1px white;
+  color: white;
+}
+
+option {
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem 0;
+  justify-content: space-between;
+}
+
+#name-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+#no-item-box {
+  justify-content: center;
+  min-height: 20vh;
+  text-align: center;
+}
+
+.disable {
+  cursor: auto;
+  opacity: 0.2;
+
+  &:hover {
+    background-color: rgba(#000000, 0);
+  }
 }

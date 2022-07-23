@@ -1,1 +1,28 @@
-<p>{{ data.name }}</p>
+<div class="container">
+  <div id="content-box">
+    <div
+      [ngStyle]="{ 'background-image': 'url(' + data.imageUrl + ')' }"
+      id="image-box"
+    ></div>
+    <div class="flex" id="detail-box">
+      <h2>{{ data.name }}</h2>
+      <p id="modal">{{ data.model }}</p>
+      <h3>${{ data.price }}</h3>
+      <form [formGroup]="qtyForm">
+        <label for="quantity">Quantity</label>
+        <select type="text" formControlName="quantity" (change)="onChange()">
+          <option [ngStyle]="{ 'background-color': 'grey' }">
+            {{ data.quantity }}
+          </option>
+          <option *ngFor="let num of arr">{{ num }}</option>
+        </select>
+      </form>
+    </div>
+    <div class="flex">
+      <mat-icon (click)="onClick()">cancel</mat-icon>
+    </div>
+  </div>
+  <div class="flex" id="price-box">
+    <h2>$ {{ data.price * data.quantity | number }}</h2>
+  </div>
+</div>

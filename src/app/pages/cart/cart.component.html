@@ -10,16 +10,86 @@
       <hr />
     </div>
   </div>
-  <div class="content-container">
+  <div *ngIf="cartData.length === 0" class="flex" id="no-item-box">
+    No item is added to the cart.
+  </div>
+  <app-cart-card *ngFor="let data of cartData" [data]="data"></app-cart-card>
+  <hr />
+  <div class="content-container" id="total-price-box">
+    <h2 id="total-price">Total Cost:</h2>
+    <h2>${{ totalPrice | number }}</h2>
+  </div>
+  <div class="content-container form-box">
     <div>
-      <app-cart-card
-        *ngFor="let data of cartData"
-        [data]="data"
-      ></app-cart-card>
+      <h3>Shipping Details</h3>
+      <hr />
     </div>
     <div>
-      <h2></h2>
+      <h3>Payment Details</h3>
+      <hr />
     </div>
   </div>
-  <a routerLink="/">Continue Shopping</a>
+  <form
+    class="content-container form-box"
+    [formGroup]="contactForm"
+    (ngSubmit)="onSubmit()"
+  >
+    <div class="flex">
+      <div class="flex" id="name-box">
+        <div>
+          <label for="firstName">First Name*</label>
+          <input
+            formControlName="firstName"
+            type="text"
+            placeholder="Enter your first name"
+          />
+        </div>
+        <div>
+          <label for="lastName">Last Name*</label>
+          <input
+            formControlName="lastName"
+            type="text"
+            placeholder="Enter your last name"
+          />
+        </div>
+      </div>
+      <div>
+        <label for="address">Shipping Address*</label>
+        <input
+          formControlName="address"
+          type="text"
+          placeholder="Enter your address"
+        />
+      </div>
+      <div>
+        <label for="email">Email*</label>
+        <input
+          formControlName="email"
+          type="email"
+          placeholder="Enter a valid email address"
+        />
+      </div>
+    </div>
+    <div class="flex">
+      <label for="payment">Payment Methods</label>
+      <select name="payment" id="payment" formControlName="payment">
+        <option value="Paypal">Paypal</option>
+        <option value="Credit Card / Debit Card">
+          Credit Card / Debit Card
+        </option>
+        <option value="Bank Transfer">Bank Transfer</option>
+      </select>
+      <button
+        type="submit"
+        name="submit"
+        [ngClass]="
+          contactForm.invalid || cartData.length === 0 ? 'disable' : ''
+        "
+        [disabled]="contactForm.invalid"
+      >
+        Checkout
+      </button>
+      <a routerLink="/">Continue Shopping</a>
+    </div>
+  </form>
 </div>

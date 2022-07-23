@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,6 +27,8 @@ import { CharacterMidbannerComponent } from './pages/product-details/character-m
 import { CharacterGalleryComponent } from './pages/product-details/character-gallery/character-gallery.component';
 import { ContactCardComponent } from './pages/contact/contact-card/contact-card.component';
 import { CartCardComponent } from './pages/cart/cart-card/cart-card.component';
+import { BackToTopBtnComponent } from './components/back-to-top-btn/back-to-top-btn.component';
+import { OrderBoxComponent } from './pages/purchase-done/order-box/order-box.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +53,8 @@ import { CartCardComponent } from './pages/cart/cart-card/cart-card.component';
     CharacterGalleryComponent,
     ContactCardComponent,
     CartCardComponent,
+    BackToTopBtnComponent,
+    OrderBoxComponent,
   ],
   imports: [
     BrowserModule,
@@ -59,6 +63,7 @@ import { CartCardComponent } from './pages/cart/cart-card/cart-card.component';
     BrowserAnimationsModule,
     MatIconModule,
     FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

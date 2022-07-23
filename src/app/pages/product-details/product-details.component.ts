@@ -15,6 +15,7 @@ import { v4 as uuidv4 } from 'uuid';
 export class ProductDetailsComponent implements OnInit {
   productId: string;
   product: ToyData;
+  cartLength: string;
   isSubmitted: boolean = false;
   isLoading: boolean = false;
   selected: any;
@@ -27,17 +28,24 @@ export class ProductDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     let id: any;
+    let length: number = this.cartService.getCart().length;
     this.route.paramMap.subscribe((params) => (id = params.get('id')));
     this.productId = id;
     this.isLoading = true;
     try {
       this.productService.getData().subscribe((data) => {
-        this.product = data[0];
+        this.product = data[parseInt(this.productId) - 1];
         this.isLoading = false;
       });
     } catch (error) {
       console.error(error);
     }
+    this.cartLength = length > 0 ? `(${length})` : '';
+    this.cartService
+      .watchStorage()
+      .subscribe(
+        (newdata) => (this.cartLength = `(${JSON.parse(newdata).length})`)
+      );
   }
 
   onChange() {
@@ -53,7 +61,6 @@ export class ProductDetailsComponent implements OnInit {
       imageUrl: this.product.images[0].url,
       quantity: this.selected,
     };
-    // console.log(data);
     this.cartService.addtoCart(data);
     this.isSubmitted = true;
     form.reset();

@@ -10,6 +10,8 @@ export class StoreLocationsService {
   constructor(private http: HttpClient) {}
 
   getStore(): Observable<StoreData[]> {
-    return this.http.get<StoreData[]>('http://localhost:5000/store_location');
+    return this.http.get<StoreData[]>(
+      'https://angular-hottoys-store-data.herokuapp.com/store_location'
+    );
   }
 }

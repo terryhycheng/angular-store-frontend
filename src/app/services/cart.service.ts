@@ -1,4 +1,3 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
 import { CartData } from './models/cart-data.model';
@@ -7,12 +6,12 @@ import { CartData } from './models/cart-data.model';
   providedIn: 'root',
 })
 export class CartService {
-  constructor(private http: HttpClient) {}
   url: string = 'http://localhost:5000/local_cart/';
+  private storageSub: Subject<any> = new Subject();
 
-  private storageSub = new Subject();
+  constructor() {}
 
-  watchStorage(): Observable<any> {
+  watchStorage(): Observable<string> {
     return this.storageSub.asObservable();
   }
 
@@ -24,14 +23,25 @@ export class CartService {
     const list: CartData[] = this.getCart();
     localStorage.setItem('cart_data', JSON.stringify([...list, data]));
     this.storageSub.next(JSON.stringify([...list, data]));
-    console.log(JSON.parse(localStorage.getItem('cart_data')!));
   }
 
-  updateCart() {
-    return this.http.patch(this.url + '1', {});
+  updateCart(newQuantity: number, ItemId: string): void {
+    let list: CartData[] = this.getCart();
+    const selected = list.find(({ id }) => id === ItemId);
+    list[list.indexOf(selected!)].quantity = newQuantity;
+    localStorage.setItem('cart_data', JSON.stringify(list));
+    this.storageSub.next(JSON.stringify([...list]));
   }
 
-  deletefromCart() {
-    return this.http.delete(this.url + '1');
+  deleteItem(id: string): void {
+    let list: CartData[] = this.getCart();
+    list = list.filter((data) => data.id !== id);
+    localStorage.setItem('cart_data', JSON.stringify(list));
+    this.storageSub.next(JSON.stringify([...list]));
+  }
+
+  clearCart(): void {
+    localStorage.clear();
+    this.storageSub.next(JSON.stringify([]));
   }
 }

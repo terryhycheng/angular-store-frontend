@@ -1,4 +1,5 @@
-<div class="container">
+<app-loader *ngIf="isLoading"></app-loader>
+<div class="container" *ngIf="!isLoading">
   <div id="main-banner-box"></div>
   <div>
     <h2>Store Locations</h2>
@@ -6,5 +7,6 @@
       *ngFor="let store of storeData"
       [store]="store"
     ></app-contact-card>
+    <app-back-to-top-btn></app-back-to-top-btn>
   </div>
 </div>

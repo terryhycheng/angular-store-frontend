@@ -1,1 +1,58 @@
-<p>purchase-done works!</p>
+<div class="container" id="not-found-box" *ngIf="isNotFound">
+  <h2>No order is found. Please go back and submit an order.</h2>
+  <button routerLink="/">back to home</button>
+</div>
+<div class="container" *ngIf="!isNotFound">
+  <div class="flex" id="logo-box">
+    <img src="../../../../assets/images/hottoys_logo.png" alt="" width="180" />
+  </div>
+  <div class="flex" id="message-box">
+    <h2>Thank you for your purchase!</h2>
+    <img src="../../../../assets/images/purchase-banner.jpg" alt="" />
+    <h2>
+      Order Reference Number :<br />
+      #{{ order.orderId }}
+    </h2>
+    <p>
+      Your order was confirmed! It will be shipped to your delivery address once
+      all the items are packed and ready. The whole process will take around
+      <em>10-15 working days</em> under normal circumstances. Order details has
+      already been sent to your email address. If you have any questions or
+      enquires about your order, please contact
+      <em><a href="mailto:info@hottoys.com.hk">info@hottoys.com.hk</a></em> with
+      providing the order reference number.
+    </p>
+    <button routerLink="/">back to home</button>
+  </div>
+  <div id="order-wrapper">
+    <h2>Order Details</h2>
+    <hr />
+    <app-order-box
+      *ngFor="let item of order.order"
+      [data]="item"
+    ></app-order-box>
+  </div>
+  <div class="flex" id="contact-info-wrapper">
+    <div>
+      <h2>Shipping Details</h2>
+      <hr />
+      <div class="text-box">
+        <strong>{{ order.info.firstName }} {{ order.info.lastName }}</strong>
+        <p>
+          {{ order.info.address }}
+        </p>
+        <p>{{ order.info.email }}</p>
+      </div>
+    </div>
+    <div>
+      <h2>Payment details</h2>
+      <hr />
+      <div class="text-box">
+        <strong>{{ order.info.payment }}</strong>
+        <p>Total: ${{ order.totalPrice | number }}</p>
+        <p>Status: Order Confirmed</p>
+      </div>
+    </div>
+  </div>
+  <app-back-to-top-btn></app-back-to-top-btn>
+</div>
