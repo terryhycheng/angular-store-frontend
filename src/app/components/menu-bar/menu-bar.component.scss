@@ -1,3 +1,5 @@
+@use "./../../styles/" as *;
+
 ul {
   display: flex;
   flex-direction: column;
@@ -5,6 +7,15 @@ ul {
   font-family: "Oswald", sans-serif;
   font-size: 1.3rem;
   border-right: 1px solid white;
+  line-height: 120%;
+
+  @include tablet(){
+    flex-direction: row;
+    border: none;
+    justify-content: center;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
 }
 
 a {
@@ -20,4 +31,13 @@ a {
 
 .active {
   color: orange;
+}
+
+#line{
+  display: none;
+  max-width: 90%;
+
+  @include tablet(){
+    display: block;
+  }
 }

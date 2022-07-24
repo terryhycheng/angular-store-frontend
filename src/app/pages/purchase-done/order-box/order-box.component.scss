@@ -11,6 +11,11 @@
   gap: 1rem;
   min-height: 25vh;
   margin: 1.5rem 0;
+
+  @include tablet() {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
 }
 
 .flex {
@@ -24,13 +29,26 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @include tablet() {
+    background-position: top;
+    min-height: 35vh;
+  }
 }
 
 #detail-box {
   padding: 3rem 1rem;
+
+  @include tablet() {
+    padding: 1rem;
+    text-align: center;
+  }
 }
 
 #quantity-box {
   align-items: center;
   text-align: center;
+  @include tablet() {
+    padding: 1rem;
+  }
 }

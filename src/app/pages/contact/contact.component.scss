@@ -8,4 +8,8 @@
   padding-top: 5rem;
   min-height: 50vh;
   @include maxWidth();
+
+  @include tablet(){
+    grid-template-columns: 1fr;
+  }
 }

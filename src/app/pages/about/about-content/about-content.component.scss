@@ -1,7 +1,13 @@
+@use "../../../styles/" as *;
+
 .container {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+
+  @include tablet(){
+   gap: 2rem;
+  }
 }
 
 h2,
@@ -19,6 +25,10 @@ p {
 #grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  @include tablet(){
+    grid-template-columns: 1fr;
+  }
 }
 
 #value-container {
@@ -26,6 +36,10 @@ p {
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   min-height: 30vh;
+
+  @include tablet(){
+    grid-template-columns: 1fr;
+  }
 
   h3 {
     font-size: 2.5rem;
@@ -46,6 +60,10 @@ p {
     border-radius: 5px;
     border: 1px solid white;
     padding: 3rem;
+
+    @include tablet(){
+      padding: 1.2rem;
+    }
   }
 }
 

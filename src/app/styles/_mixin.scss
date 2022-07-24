@@ -1,10 +1,20 @@
 @mixin maxWidth {
   max-width: clamp(0px, 80%, 1500px);
   margin: auto;
+
+  @include mobile(){
+    max-width: 90%;
+  }
 }
 
 @mixin hugeScreen {
   @media (min-width: 1600px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 1599px) {
     @content;
   }
 }

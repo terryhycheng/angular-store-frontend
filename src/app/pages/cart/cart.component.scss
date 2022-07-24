@@ -30,6 +30,11 @@ a {
   grid-template-columns: 70% 1fr;
   gap: 3rem;
   margin-top: 2rem;
+
+  @include tablet(){
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 }
 
 .wrapper {
@@ -51,11 +56,19 @@ hr {
 
 #total-price {
   text-align: right;
+
+  @include tablet(){
+    text-align: center;
+  }
 }
 
 .form-box {
   margin-top: 0.5rem;
   grid-template-columns: 60% 1fr;
+
+  @include tablet(){
+    grid-template-columns: 1fr;
+  }
 }
 
 input {
@@ -101,5 +114,11 @@ option {
 
   &:hover {
     background-color: rgba(#000000, 0);
+  }
+}
+
+.mobileHidden{
+  @include tablet(){
+    display: none;
   }
 }

@@ -113,9 +113,13 @@ p {
 
 .submit {
   @include button();
-  margin: 0 1rem;
+  // margin: 0 1rem;
   min-width: 200px;
   padding: 0.8rem;
+
+  @include tablet(){
+    width: 100%;
+  }
 }
 
 .disable {
@@ -131,6 +135,11 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 1rem;
+
+  @include tablet(){
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }
 
 #message-box {
@@ -141,6 +150,10 @@ p {
   background-color: rgba(#32bc55, 0.8);
   font-size: 1.2rem;
   font-weight: 300;
+
+  @include tablet(){
+    padding: 1rem;
+  }
 }
 
 .btt-box {
@@ -159,6 +172,10 @@ p {
     gap: 0.5rem;
     text-transform: uppercase;
     font-family: "oswald";
+
+    @include tablet(){
+      width: 60%;
+    }
   }
 }
 

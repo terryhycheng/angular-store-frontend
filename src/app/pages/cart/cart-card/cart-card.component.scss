@@ -8,6 +8,10 @@
   display: grid;
   grid-template-columns: 70% 1fr;
   gap: 3rem;
+
+  @include tablet(){
+    grid-template-columns: 1fr;
+  }
 }
 
 .flex {
@@ -20,6 +24,12 @@
   display: grid;
   grid-template-columns: 30% 8fr 1fr;
   border: solid 1px white;
+
+  @include tablet(){
+    display: flex;
+    flex-direction: column-reverse;
+    grid-template-columns: 1fr;
+  }
 }
 
 #detail-box {
@@ -28,11 +38,19 @@
   h3 {
     font-size: 1.8rem;
   }
+
+  @include tablet(){
+    padding: 1.5rem;
+  }
 }
 
 #price-box {
   padding: 1rem;
   text-align: center;
+
+  @include tablet(){
+    display: none;
+  }
 }
 
 mat-icon {
@@ -66,4 +84,17 @@ option {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
+
+  @include tablet(){
+    min-height: 40vh;
+
+  }
+}
+
+#icon-box{
+  @include tablet(){
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+  }
 }
