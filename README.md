@@ -2,7 +2,7 @@
 
 ![main banner](./src/assets/images/github-banner.jpg)
 
-Demo link: [https://angular-hottoys-store-frontend.herokuapp.com/](https://angular-hottoys-store-frontend.herokuapp.com/)
+Demo link: [https://angular-store-frontend.vercel.app/](https://angular-store-frontend.vercel.app/)
 
 As a Marval fans, I always admire Hot Toys because of their high quality products. In this project, I took their products as inspiration and re-designed their website by using one of the JS framework - [Angular](https://angular.io/).
 
